@@ -1,7 +1,7 @@
 # NodeJS GraphQL
 
-- Query
-- Mutations
+- **Query**: retrieve information
+- **Mutations**: create, update, delete (mutate the backend)
 
 - Query fields are executed in parallel, mutation fields run in series, one after the other.
 
@@ -9,7 +9,7 @@
 
 We can use graphQL **Alias** to run multiple mutations.
 
-- Mutation
+- Mutations
 
 ```javascript
 mutation {    
