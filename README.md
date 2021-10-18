@@ -7,15 +7,15 @@
 
 ## Mutations
 
-### Alias
+We can use graphQL **Alias** to run multiple mutations.
 
 - Mutation
 
 ```javascript
-mutation {  
+mutation {    
   aliasOne: createUser(
-    name: "Any Name", email: "any_email@mail.com"
-  ){id, name, email}  
+    name: "Any Name", email: "any_email@mail.com", phone:"111-111"
+  ){id, name, email, phone}  
   
   aliasTwo: createUser(
     name: "Any Name 2", email: "any_email2@mail.com"
@@ -29,12 +29,13 @@ mutation {
 {
   "data": {
     "aliasOne": {
-      "id": "616ce58a7b3091daf2973b76",
+      "id": "616cec1d3be90c37fce8898c",
       "name": "Any Name",
-      "email": "any_email@mail.com"
+      "email": "any_email@mail.com",
+      "phone": "111-111"
     },
     "aliasTwo": {
-      "id": "616ce58a7b3091daf2973b78",
+      "id": "616cec1d3be90c37fce8898e",
       "name": "Any Name 2",
       "email": "any_email2@mail.com"
     }
